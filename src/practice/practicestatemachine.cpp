@@ -236,7 +236,9 @@ void PracticeStateMachine::gradeEntryAndContinue()
     }
 
     if (m_current->shouldChangeGrades()) {
-        m_mode->updateGrades();
+        if (!Prefs::practiceWithoutGrading()) {
+            m_mode->updateGrades();
+        }
         if (m_frontend->resultState() == AbstractFrontend::AnswerCorrect) {
             currentEntryFinished();
         }

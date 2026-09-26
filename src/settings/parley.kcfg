@@ -154,6 +154,10 @@
       <label>When the synonym instead of the word was entered, does it count as correct?</label>
       <default>true</default>
     </entry>
+    <entry name="PracticeWithoutGrading" type="Bool">
+      <label>Do not change confidence levels during practice.</label>
+      <default>false</default>
+    </entry>
     <entry name="PracticeImagesEnabled" type="Bool">
       <label>Enable image display in the practice dialogs.</label>
       <default>true</default>
